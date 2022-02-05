@@ -1,0 +1,78 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sabor Easy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* <link rel="stylesheet" href="~/css/site.css" /> *@
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69ab88855e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo flex-center">
+            <img src="/images/logo.png" alt="">
+            <h1 class="display-1">Sabor Easy</h1>
+        </div>
+        <nav class="navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                &equiv;
+            </label>
+            <ul>
+                <li><a href="/Home/Index">Home</a></li>
+                <li><a href="/Home/Receitas">Receitas</a></li>
+                <li><a href="/Home/Dicas">Dicas</a></li>
+                <li><a href="/Home/Contato">Contato</a></li>
+                @if (Context.Session.GetInt32("idUsuario") != null)
+                {
+                    <li><a href="/Home/ListaMensagens">Mensagens</a></li>
+                }
+                @if (Context.Session.GetInt32("idUsuario") == null)
+                {
+                    <a href="/Usuario/Login" class="btn btn-primary" id="loginRes">Login</a>
+                }
+                else
+                {
+                    <a href="/Usuario/Logout" class="btn btn-warning" id="loginRes">Logout</a>
+                }
+            </ul>
+        </nav>
+        @if (Context.Session.GetInt32("idUsuario") == null)
+        {
+            <a href="/Usuario/Login" class="btn btn-primary absolute-right" id="login">Login</a>
+        }
+        else
+        {
+            <a href="/Usuario/Logout" class="btn btn-warning absolute-right" id="login">Logout</a>
+        }
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3 text-center">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="flex-around footer">
+        <p>Todos os Direitos Reservados &copy; Sabor Easy</p>
+        <span><a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a
+                href="#"><i class="fab fa-whatsapp"></i></a></span>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

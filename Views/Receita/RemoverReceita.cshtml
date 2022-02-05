@@ -1,0 +1,33 @@
+@model Receita
+
+<h2>Tem certeza que deseja remover essa receita?</h2>
+
+<form asp-action=RemoverReceita asp-controller="Receita" method="POST">
+    <fieldset>
+        <legend>Remover Receita</legend>
+
+        <input type="hidden" asp-for="receitaId">
+
+        <input type="hidden" asp-for="imagePath">
+
+        <label asp-for="Titulo">Título</label>
+        <input maxlength="25" asp-for="Titulo" readonly>
+
+        <label asp-for="Porcoes">Porções</label>
+        <input maxlength="25" asp-for="Porcoes" readonly>
+
+        <label asp-for="TempoPreparo">Tempo de Preparo</label>
+        <input maxlength="25" asp-for="TempoPreparo" readonly>
+
+        <label asp-for="Ingredientes">Ingredientes</label>
+        <textarea asp-for="Ingredientes" cols="30" rows="10" maxlength="300" readonly></textarea>
+
+        <label asp-for="ModoPreparo">Modo de Preparo</label>
+        <textarea asp-for="ModoPreparo" cols="30" rows="10" maxlength="575" readonly></textarea>
+
+        <p style="text-align: center;">
+            <input type="submit" style="background-color: red;" value="Remover">
+            <input type="button" class="btn btn-primary" onclick="location.href='/Home/Receitas'" value="Cancelar">
+        </p>
+    </fieldset>
+</form>

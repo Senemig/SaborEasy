@@ -1,0 +1,24 @@
+@model Post
+
+<form action="NovoPost" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Novo Post</legend>
+
+        <label asp-for="imagePath">Imagem</label>
+        <input type="file" name="file" id="name" accept="image/jpeg, image/png" required>
+
+        <label asp-for="titulo">Título</label>
+        <input maxlength="25" asp-for="titulo" required>
+
+        <label asp-for="hashtags">Hashtags</label>
+        <input maxlength="55" asp-for="hashtags" required>
+
+        <label asp-for="descricao">Descrição</label>
+        <textarea asp-for="descricao" cols="30" rows="10" maxlength="575" required></textarea>
+
+        <p style="text-align: center;">
+            <input type="submit" value="Enviar">
+            <input type="button" class="btn btn-danger" onclick="location.href='/Home/Dicas'" value="Cancelar">
+        </p>
+    </fieldset>
+</form>

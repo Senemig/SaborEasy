@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Contato";
+}
+@model Mensagem
+
+<h2>Mande uma crítica, um elogio, uma receita sua ou uma dica legal!</h2>
+
+<div class="form-contato">
+    <form action="EnviarMensagem" method="POST">
+        <fieldset>
+            <legend>Fale Conosco!</legend>
+
+            <label asp-for="nome">Nome</label>
+            <input asp-for="nome" required>
+
+            <label asp-for="email">Email</label>
+            <input type="email" asp-for="email">
+
+            <label asp-for="mensagem">Mensagem</label>
+            <textarea asp-for="mensagem" cols="30" rows="10" maxlength="600" required></textarea>
+
+            <p style="text-align: center;">
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</div>

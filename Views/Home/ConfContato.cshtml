@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Contato";
+}
+@model Mensagem
+
+<h3 style="margin-top: 20px;">Olá <strong>@Model.nome</strong>, agradecemos por entrar em contato conosco!</h3>
+<p style="margin-top:20px;">Aqui está o conteúdo da sua mensagem:</p>
+<p style="margin-top:20px;"><Strong>Nome:</Strong> @Model.nome</p>
+<p style="margin-top:20px;"><Strong>E-Mail:</Strong> @Model.email</p>
+<p style="margin-top:20px;"><Strong>Mensagem</Strong> @Model.mensagem</p>

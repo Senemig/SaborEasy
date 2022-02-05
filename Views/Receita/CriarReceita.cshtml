@@ -1,0 +1,30 @@
+@model Receita
+
+<form asp-action=CriarReceita asp-controller="Receita" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Criar Receita</legend>
+
+        <label asp-for="imagePath">Imagem</label>
+        <input type="file" name="file" id="name" accept="image/jpeg, image/png" required>
+
+        <label asp-for="Titulo">Título</label>
+        <input maxlength="25" asp-for="Titulo" required>
+
+        <label asp-for="Porcoes">Porções</label>
+        <input maxlength="25" asp-for="Porcoes" required>
+
+        <label asp-for="TempoPreparo">Tempo de Preparo</label>
+        <input maxlength="25" asp-for="TempoPreparo" required>
+
+        <label asp-for="Ingredientes">Ingredientes (separar por nova linha)</label>
+        <textarea asp-for="Ingredientes" cols="30" rows="10" maxlength="900" required></textarea>
+
+        <label asp-for="ModoPreparo">Modo de Preparo</label>
+        <textarea asp-for="ModoPreparo" cols="30" rows="10" maxlength="900" required></textarea>
+
+        <p style="text-align: center;">
+            <input type="submit" value="Enviar">
+            <input type="button" class="btn btn-danger" onclick="location.href='/Home/Receitas'" value="Cancelar">
+        </p>
+    </fieldset>
+</form>

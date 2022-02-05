@@ -1,0 +1,68 @@
+@using Microsoft.AspNetCore.Http
+@model Receita
+@{
+    ViewData["Title"] = Model.Titulo;
+}
+
+<style>
+    .container {
+        margin-left: 50px;
+    }
+
+    .flex-column {
+        align-items: flex-start;
+    }
+</style>
+
+<div class="receita-container">
+    <h2>@Model.Titulo</h2>
+
+    <div>
+        @if (Context.Session.GetInt32("idUsuario") != null)
+        {
+            <p>
+                <span class="btn-edit"><i class="fas fa-pencil-alt"
+                    onclick="location.href='@Url.Action("EditarReceita", "Receita", new {id = Model.receitaId})'"></i></span>
+                <span class="btn-edit"><i class="fas fa-trash-alt"
+                    onclick="location.href='@Url.Action("RemoverReceita", "Receita", new {id = Model.receitaId})'"></i></span>
+            </p>
+        }
+    </div>
+
+    <div>
+        <img src="/images/@Model.imagePath">
+    </div>
+
+    <div>
+        <p class="receita-info">
+            <span><i class="far fa-clock my-icon"></i> @Model.TempoPreparo</span>
+            <span><i class="fas fa-utensils my-icon"></i> @Model.Porcoes</span>
+        </p>
+    </div>
+
+    <div class="receita-texto">
+        <h5>Igredientes</h5>
+        <ul>
+            @foreach (string ingrediente in Model.Ingredientes.Split("\n"))
+            {
+                <li>@ingrediente</li>
+            }
+        </ul>
+    </div>
+
+    <div class="receita-texto">
+        <h5>Modo de Preparo</h5>
+        @foreach (string str in Model.ModoPreparo.Split("\n"))
+        {
+            <p>
+                @str
+            </p>
+        }
+    </div>
+
+    <div class="receita-data">
+        <p>
+            Receita criada em @Model.dataReceita.ToShortDateString()
+        </p>
+    </div>
+</div>

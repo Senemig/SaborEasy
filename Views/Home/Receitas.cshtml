@@ -1,0 +1,86 @@
+@using Microsoft.AspNetCore.Http
+@model List<Receita>
+@{
+    ViewData["Title"] = "Receitas";
+}
+
+@if (Context.Session.GetInt32("idUsuario") != null)
+{
+    <a href="/Receita/CriarReceita" class="btn btn-primary">Nova Receita</a>
+}
+
+
+@if (Model.Count > 0)
+{
+    <div class="mycards">
+        @if (Model.Count > 3)
+        {
+            @for (int i = 0; i < Model.Count; i += 3)
+            {
+                int j = i;
+                <div class="flex-center">
+
+                    @do
+                    {
+                        <div class="mycard">
+                            <div class="mycard-body"
+                onclick="location.href='@Url.Action("ExibirReceita", "Receita", new {id = Model[j].receitaId})'">
+                                <h3>@Model[j].Titulo</h3>
+                                <img src="/images/@Model[j].imagePath" alt="">
+                                <p class="flex-around">
+                                    <span><i class="far fa-clock my-icon"></i> @Model[j].TempoPreparo</span><span><i
+                            class="fas fa-utensils my-icon"></i>
+                                        @Model[j].Porcoes</span>
+                                </p>
+                            </div>
+                            @if (Context.Session.GetInt32("idUsuario") != null)
+                            {
+                                <p style="margin-top: 0;">
+                                    <span class="btn-edit"><i class="fas fa-pencil-alt"
+                        onclick="location.href='@Url.Action("EditarReceita", "Receita", new {id = Model[j].receitaId})'"></i></span>
+                                    <span class="btn-edit"><i class="fas fa-trash-alt"
+                        onclick="location.href='@Url.Action("RemoverReceita", "Receita", new {id = Model[j].receitaId})'"></i></span>
+                                </p>
+                            }
+                        </div>
+                        j++;
+                    } while ((j % 3) != 0 && j < Model.Count);
+                </div>
+            }
+        }
+        else
+        {
+            <div class="flex-center">
+                @foreach (Receita receita in Model)
+                {
+                    <div class="mycard">
+                        <div class="mycard-body"
+                onclick="location.href='@Url.Action("ExibirReceita", "Receita", new {id = receita.receitaId})'">
+                            <h3>@receita.Titulo</h3>
+                            <img src="/images/@receita.imagePath" alt="">
+                            <p class="flex-around">
+                                <span><i class="far fa-clock my-icon"></i> @receita.TempoPreparo</span><span><i
+                            class="fas fa-utensils my-icon"></i>
+                                    @receita.Porcoes</span>
+                            </p>
+                        </div>
+                        @if (Context.Session.GetInt32("idUsuario") != null)
+                        {
+                            <p style="margin-top: 0;">
+                                <span class="btn-edit"><i class="fas fa-pencil-alt"
+                        onclick="location.href='@Url.Action("EditarReceita", "Receita", new {id = receita.receitaId})'"></i></span>
+                                <span class="btn-edit"><i class="fas fa-trash-alt"
+                        onclick="location.href='@Url.Action("RemoverReceita", "Receita", new {id = receita.receitaId})'"></i></span>
+                            </p>
+                        }
+                    </div>
+                }
+            </div>
+        }
+
+    </div>
+}
+else
+{
+    <p>Nenhuma receita para exibir!</p>
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DD+cvnMy0cRe2NZTSFUTHIt3rrK/g4/xnMiOKaBjFYPmMFOg5V2fC0TQ2/vAjQloHzvXut2e6qHM1DjBIhdsiw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ferna\\Desktop\\SENAC\\Projeto Integrador\\Sabor Easy MVC\\Sabor Easy MVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ferna\\.nuget\\packages\\mysqlconnector\\1.3.12\\mysqlconnector.1.3.12.nupkg.sha512"
+  ],
+  "logs": []
+}

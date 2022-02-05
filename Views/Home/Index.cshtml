@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model ViewModel
+
+@if (Model.receitas.Count > 0)
+{
+    <div class="main_article flex-center">
+        <a href="/Receita/ExibirReceita/@Model.receitas[0].receitaId">
+            <img src="/images/@Model.receitas[0].imagePath" alt="">
+            <p>@Model.receitas[0].Titulo</p>
+        </a>
+    </div>
+
+    @if (Model.receitas.Count > 1)
+    {
+        <h2>Outras publicações</h2>
+        <div class="other_articles">
+            @for (int i = 1; i <= 3 && i < Model.receitas.Count; i++)
+            {
+                <a class="receita" href="/Receita/ExibirReceita/@Model.receitas[i].receitaId">
+                    <img src="/images/@Model.receitas[i].imagePath">
+                    <p>@Model.receitas[i].Titulo</p>
+                </a>
+            }
+        </div>
+    }
+    if (Model.posts.Count > 0)
+    {
+        <div class="other_articles">
+            @for (int i = 0; i < 3 && i < Model.posts.Count; i++)
+            {
+                <a class="post" href="/Home/Dicas/#@Model.posts[i].postId">
+                    <img src="/images/@Model.posts[i].imagePath">
+                    <p>@Model.posts[i].titulo</p>
+                </a>
+            }
+        </div>
+    }
+}
+
+else
+{
+    <h2>Nenhuma Receita Cadastrada!</h2>
+}

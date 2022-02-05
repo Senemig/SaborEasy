@@ -1,0 +1,47 @@
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Sabor Easy MVC.exe
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Sabor Easy MVC.deps.json
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Sabor Easy MVC.runtimeconfig.json
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Sabor Easy MVC.runtimeconfig.dev.json
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Sabor Easy MVC.dll
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Sabor Easy MVC.pdb
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Sabor Easy MVC.Views.dll
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Sabor Easy MVC.Views.pdb
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.AssemblyInfoInputs.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.AssemblyInfo.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.RazorAssemblyInfo.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.RazorAssemblyInfo.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.TagHelpers.input.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.TagHelpers.output.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.RazorCoreGenerate.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contato.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Receitas.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.RazorTargetAssemblyInfo.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.RazorTargetAssemblyInfo.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.Views.pdb
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\staticwebassets\Sabor Easy MVC.StaticWebAssets.Manifest.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.dll
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.pdb
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.genruntimeconfig.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.csproj.CopyComplete
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dicas.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\ConfContato.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Posting.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Login.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\ListaMensagens.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Receita\CriarReceita.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Receita\EditarReceita.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Receita\RemoverReceita.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Receita\Receita.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.csproj.AssemblyReference.cache
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.GeneratedMSBuildEditorConfig.editorconfig

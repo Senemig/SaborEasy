@@ -1,0 +1,61 @@
+h2 {
+  margin-top: 20px;
+}
+
+fieldset {
+  margin: 2em 0;
+  padding: 1em 2em;
+  border: solid 2px grey;
+  background-color: white;
+  border-radius: 6px;
+  min-width: 600px;
+}
+
+legend {
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  color: rgb(116, 112, 112);
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+label:first-of-type {
+  margin-top: 0;
+}
+
+input {
+  padding: 0.5em;
+  border: solid 1px grey;
+}
+
+input[type="email"],
+input[type="text"] {
+  width: 15em;
+}
+
+input[type="submit"] {
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  background-color: rgb(64, 144, 190);
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.22);
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+  background-color: rgb(52, 119, 158);
+}
+
+textarea {
+  min-height: 8em;
+  min-width: 100%;
+  padding: 0.5em;
+  border: solid 1px grey;
+}
