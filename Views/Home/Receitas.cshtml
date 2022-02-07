@@ -24,7 +24,7 @@
                     {
                         <div class="mycard">
                             <div class="mycard-body"
-                onclick="location.href='@Url.Action("ExibirReceita", "Receita", new {id = Model[j].receitaId})'">
+                onclick="location.href='@Url.Action("ExibirReceita", "Receita", new {id = Model[j].Id})'">
                                 <h3>@Model[j].Titulo</h3>
                                 <img src="/images/@Model[j].imagePath" alt="">
                                 <p class="flex-around">
@@ -37,9 +37,9 @@
                             {
                                 <p style="margin-top: 0;">
                                     <span class="btn-edit"><i class="fas fa-pencil-alt"
-                        onclick="location.href='@Url.Action("EditarReceita", "Receita", new {id = Model[j].receitaId})'"></i></span>
+                        onclick="location.href='@Url.Action("EditarReceita", "Receita", new {id = Model[j].Id})'"></i></span>
                                     <span class="btn-edit"><i class="fas fa-trash-alt"
-                        onclick="location.href='@Url.Action("RemoverReceita", "Receita", new {id = Model[j].receitaId})'"></i></span>
+                        onclick="location.href='@Url.Action("RemoverReceita", "Receita", new {id = Model[j].Id})'"></i></span>
                                 </p>
                             }
                         </div>
@@ -55,7 +55,7 @@
                 {
                     <div class="mycard">
                         <div class="mycard-body"
-                onclick="location.href='@Url.Action("ExibirReceita", "Receita", new {id = receita.receitaId})'">
+                onclick="location.href='@Url.Action("ExibirReceita", "Receita", new {id = receita.Id})'">
                             <h3>@receita.Titulo</h3>
                             <img src="/images/@receita.imagePath" alt="">
                             <p class="flex-around">
@@ -68,9 +68,9 @@
                         {
                             <p style="margin-top: 0;">
                                 <span class="btn-edit"><i class="fas fa-pencil-alt"
-                        onclick="location.href='@Url.Action("EditarReceita", "Receita", new {id = receita.receitaId})'"></i></span>
+                        onclick="location.href='@Url.Action("EditarReceita", "Receita", new {id = receita.Id})'"></i></span>
                                 <span class="btn-edit"><i class="fas fa-trash-alt"
-                        onclick="location.href='@Url.Action("RemoverReceita", "Receita", new {id = receita.receitaId})'"></i></span>
+                        onclick="location.href='@Url.Action("RemoverReceita", "Receita", new {id = receita.Id})'"></i></span>
                             </p>
                         }
                     </div>

@@ -5,7 +5,7 @@ namespace Sabor_Easy_MVC.Models
 {
     public class Post
     {
-        public int postId {get; set;}
+        public int Id {get; set;}
         public string titulo { get; set; }
         public string hashtags { get; set; }
         public string descricao { get; set; }

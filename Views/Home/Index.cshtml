@@ -6,7 +6,7 @@
 @if (Model.receitas.Count > 0)
 {
     <div class="main_article flex-center">
-        <a href="/Receita/ExibirReceita/@Model.receitas[0].receitaId">
+        <a href="/Receita/ExibirReceita/@Model.receitas[0].Id">
             <img src="/images/@Model.receitas[0].imagePath" alt="">
             <p>@Model.receitas[0].Titulo</p>
         </a>
@@ -18,7 +18,7 @@
         <div class="other_articles">
             @for (int i = 1; i <= 3 && i < Model.receitas.Count; i++)
             {
-                <a class="receita" href="/Receita/ExibirReceita/@Model.receitas[i].receitaId">
+                <a class="receita" href="/Receita/ExibirReceita/@Model.receitas[i].Id">
                     <img src="/images/@Model.receitas[i].imagePath">
                     <p>@Model.receitas[i].Titulo</p>
                 </a>
@@ -30,7 +30,7 @@
         <div class="other_articles">
             @for (int i = 0; i < 3 && i < Model.posts.Count; i++)
             {
-                <a class="post" href="/Home/Dicas/#@Model.posts[i].postId">
+                <a class="post" href="/Home/Dicas/#@Model.posts[i].Id">
                     <img src="/images/@Model.posts[i].imagePath">
                     <p>@Model.posts[i].titulo</p>
                 </a>

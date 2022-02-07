@@ -23,16 +23,16 @@ namespace Sabor_Easy_MVC.Controllers
         {
             receita.imagePath = ImageHandler.UploadImage(file);
             receita.dataReceita = DateTime.Now;
-            ReceitaRepository rr = new ReceitaRepository();
-            rr.Insert(receita);
+            ReceitaService rs = new ReceitaService();
+            rs.Inserir(receita);
 
             return RedirectToAction("Receitas", "Home");
         }
 
         public IActionResult EditarReceita(int id)
         {
-            ReceitaRepository rr = new ReceitaRepository();
-            Receita receita = rr.Query(id);
+            ReceitaService rs = new ReceitaService();
+            Receita receita = rs.ListarId(id);
 
             return View(receita);
         }
@@ -40,20 +40,20 @@ namespace Sabor_Easy_MVC.Controllers
         [HttpPost]
         public IActionResult EditarReceita(Receita receita, IFormFile file)
         {
-            ReceitaRepository rr = new ReceitaRepository();
+            ReceitaService rs = new ReceitaService();
             if (file != null)
             {
                 receita.imagePath = ImageHandler.UploadImage(file);
             }
-            rr.Update(receita);
+            rs.Atualizar(receita);
 
             return RedirectToAction("Receitas", "Home");
         }
 
         public IActionResult RemoverReceita(int id)
         {
-            ReceitaRepository rr = new ReceitaRepository();
-            Receita receita = rr.Query(id);
+            ReceitaService rs = new ReceitaService();
+            Receita receita = rs.ListarId(id);
 
             return View(receita);
         }
@@ -61,17 +61,17 @@ namespace Sabor_Easy_MVC.Controllers
         [HttpPost]
         public IActionResult RemoverReceita(Receita receita)
         {
-            ReceitaRepository rr = new ReceitaRepository();
-            rr.Delete(receita.receitaId);
+            ReceitaService rs = new ReceitaService();
+            rs.Remover(receita.Id);
 
             return RedirectToAction("Receitas", "Home");
         }
 
         public IActionResult ExibirReceita(int id)
         {
-            ReceitaRepository rr = new ReceitaRepository();
+            ReceitaService rs = new ReceitaService();
 
-            Receita receita = rr.Query(id);
+            Receita receita = rs.ListarId(id);
 
             return View("Receita", receita);
         }

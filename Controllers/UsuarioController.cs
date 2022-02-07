@@ -21,10 +21,10 @@ namespace Sabor_Easy_MVC.Controllers
         [HttpPost]
         public IActionResult Cadastro(Usuario usuario)
         {
-            UsuarioRepository ur = new UsuarioRepository();
-            if (!ur.Query(usuario))
+            UsuarioService us = new UsuarioService();
+            if (us.BuscarLogin(usuario.Login) == null)
             {
-                ur.Insert(usuario);
+                us.Inserir(usuario);
                 return RedirectToAction("Login", "Usuario");
             }
             else
@@ -42,13 +42,13 @@ namespace Sabor_Easy_MVC.Controllers
         [HttpPost]
         public IActionResult Login(Usuario usuario)
         {
-            UsuarioRepository ur = new UsuarioRepository();
-            Usuario usr = ur.QueryLogin(usuario);
+            UsuarioService us = new UsuarioService();
+            Usuario u = us.BuscarLogin(usuario.Login);
 
-            if (usr != null)
+            if (us.ValidarUsuario(usuario))
             {
-                HttpContext.Session.SetInt32("idUsuario", usr.Id);
-                HttpContext.Session.SetString("nomeUsuario", usr.Nome);
+                HttpContext.Session.SetInt32("idUsuario", u.Id);
+                HttpContext.Session.SetString("nomeUsuario", u.Nome);
                 return RedirectToAction("Index", "Home");
             }
             else

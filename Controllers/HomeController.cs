@@ -22,30 +22,30 @@ namespace Sabor_Easy_MVC.Controllers
 
         public IActionResult Index()
         {
-            ReceitaRepository rr = new ReceitaRepository();
-            PostRepository pr = new PostRepository();
-            
+            ReceitaService rs = new ReceitaService();
+            PostService ps = new PostService();
+
             ViewModel viewModel = new ViewModel();
 
-            viewModel.receitas = rr.Query();
-            viewModel.posts = pr.Querry();
+            viewModel.receitas = rs.ListarTodos();
+            viewModel.posts = ps.ListarTodos();
 
             return View(viewModel);
         }
 
         public IActionResult Receitas()
         {
-            ReceitaRepository rr = new ReceitaRepository();
-            List<Receita> lista = rr.Query();
+            ReceitaService rs = new ReceitaService();
+            List<Receita> lista = rs.ListarTodos();
             return View(lista);
         }
 
-        
+
 
         public IActionResult Dicas()
         {
-            PostRepository pr = new PostRepository();
-            List<Post> lista = pr.Querry();
+            PostService ps = new PostService();
+            List<Post> lista = ps.ListarTodos();
             return View(lista);
         }
 
@@ -67,26 +67,26 @@ namespace Sabor_Easy_MVC.Controllers
         {
             post.imagePath = ImageHandler.UploadImage(file);
             post.postDate = DateTime.Now;
-            PostRepository pr = new PostRepository();
-            pr.Insert(post);
+            PostService ps = new PostService();
+            ps.Inserir(post);
             return RedirectToAction("Dicas", "Home");
         }
 
-        
+
 
         [HttpPost]
-        public IActionResult EnviarMensagem(Mensagem msg)
+        public IActionResult EnviarMensagem(Mensagem mensagem)
         {
-            msg.msgDate = DateTime.Now;
-            MensagemRepository mr = new MensagemRepository();
-            mr.Insert(msg);
-            return View("ConfContato", msg);
+            mensagem.msgDate = DateTime.Now;
+            MensagemService ms = new MensagemService();
+            ms.Inserir(mensagem);
+            return View("ConfContato", mensagem);
         }
 
         public IActionResult ListaMensagens()
         {
-            MensagemRepository mr = new MensagemRepository();
-            List<Mensagem> lista = mr.Query();
+            MensagemService ms = new MensagemService();
+            List<Mensagem> lista = ms.ListarTodos();
             return View(lista);
         }
     }
