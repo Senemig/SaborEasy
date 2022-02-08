@@ -121,6 +121,30 @@ body {
   border-radius: 10px;
 }
 
+.main_article_img {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Carrossel */
+.carousel-caption h5 {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.473);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.carousel-indicators li {
+  background-color: black;
+}
+
 .other_articles {
   width: 100%;
   margin: 20px 0;
