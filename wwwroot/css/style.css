@@ -224,6 +224,10 @@ body {
   color: rgba(65, 65, 65, 0.623);
 }
 
+.col {
+  max-width: 480px;
+}
+
 .btn-edit {
   cursor: default;
   margin-top: 10px;
