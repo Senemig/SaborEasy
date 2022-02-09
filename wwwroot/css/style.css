@@ -270,7 +270,7 @@ body {
   overflow: hidden;
   box-shadow: 0 2px 20px lightgrey;
   border-radius: 10px;
-  width: 500px;
+  width: 650px;
   margin: 20px auto 40px auto;
 }
 
@@ -307,6 +307,7 @@ body {
   max-height: 250px;
   cursor: default;
   text-align: left;
+  font-size: 1.2rem;
 }
 
 .blog-date {

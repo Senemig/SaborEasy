@@ -28,7 +28,7 @@
             else
             {
                 <li class="page-item">
-                    <a class="page-link" href="/Home/Receitas/@(pagAtual-1)" aria-label="Previous">
+                    <a class="page-link" href="/Home/Receitas?pagAtual=@(pagAtual-1)" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                         <span class="sr-only">Previous</span>
                     </a>
@@ -38,11 +38,11 @@
             {
                 if (i + 1 == pagAtual)
                 {
-                    <li class="page-item active"><a class="page-link" href="/Home/Receitas/@(i+1)">@(i+1)</a></li>
+                    <li class="page-item active"><a class="page-link" href="/Home/Receitas?pagAtual=@(i+1)">@(i+1)</a></li>
                 }
                 else
                 {
-                    <li class="page-item"><a class="page-link" href="/Home/Receitas/@(i+1)">@(i+1)</a></li>
+                    <li class="page-item"><a class="page-link" href="/Home/Receitas?pagAtual=@(i+1)">@(i+1)</a></li>
                 }
             }
             @if (pagAtual == totalPag)
@@ -57,7 +57,7 @@
             else
             {
                 <li class="page-item">
-                    <a class="page-link" href="/Home/Receitas/@(pagAtual+1)" aria-label="Next">
+                    <a class="page-link" href="/Home/Receitas?pagAtual=@(pagAtual+1)" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                         <span class="sr-only">Next</span>
                     </a>

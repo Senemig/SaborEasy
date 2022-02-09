@@ -16,9 +16,12 @@
         <label asp-for="descricao">Descrição</label>
         <textarea asp-for="descricao" cols="30" rows="10" maxlength="575" required></textarea>
 
+        <label asp-for="conteudo">Texto</label>
+        <textarea asp-for="conteudo" cols="30" rows="30" maxlength="5000" required></textarea>
+
         <p style="text-align: center;">
             <input type="submit" value="Enviar">
-            <input type="button" class="btn btn-danger" onclick="location.href='/Home/Dicas'" value="Cancelar">
+            <input type="button" class="btn btn-danger" onclick="location.href='/Blog/Dicas'" value="Cancelar">
         </p>
     </fieldset>
 </form>

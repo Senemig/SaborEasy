@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Dicas";
+}
+@model List<Post>
+@using Microsoft.AspNetCore.Http
+
+@if (Context.Session.GetInt32("idUsuario") != null)
+{
+    <a href="/Blog/Posting" class="btn btn-primary">Nova Dica</a>
+}
+
+<div class="blog-wrapper">
+
+    @if (Model.Count > 0)
+    {
+        foreach (Post post in Model)
+        {
+            <div class="blog-card" id="@post.Id">
+                <div class="blog-card-banner">
+                    <img class="banner-img" src="/images/@post.imagePath" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <p class="text-right">
+                        @foreach (var s in post.hashtags.Split(' '))
+                        {
+                            <span class="blog-hashtag">@s</span>
+                        }
+                    </p>
+                    <h2 class="blog-title">@post.titulo</h2>
+                    <p class="blog-description">@post.descricao</p>
+                    <p class="blog-date">Postado em @post.postDate.ToShortDateString()</p>
+                </div>
+            </div>
+        }
+    }
+</div>

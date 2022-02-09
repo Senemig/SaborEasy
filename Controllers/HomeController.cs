@@ -33,7 +33,7 @@ namespace Sabor_Easy_MVC.Controllers
             return View(viewModel);
         }
 
-        public IActionResult Receitas(int id)
+        public IActionResult Receitas(int pagAtual)
         {
             ReceitaService rs = new ReceitaService();
             List<Receita> lista = rs.ListarTodos();
@@ -45,18 +45,9 @@ namespace Sabor_Easy_MVC.Controllers
             else if (lista.Count >= 7)
             {
                 ViewData["totalPag"] = (lista.Count / 6 + ((lista.Count % 6) == 0 ? 0 : 1));
-                ViewData["pagAtual"] = id;
+                ViewData["pagAtual"] = pagAtual;
             }
 
-            return View(lista);
-        }
-
-
-
-        public IActionResult Dicas()
-        {
-            PostService ps = new PostService();
-            List<Post> lista = ps.ListarTodos();
             return View(lista);
         }
 
@@ -64,26 +55,6 @@ namespace Sabor_Easy_MVC.Controllers
         {
             return View();
         }
-
-        public IActionResult Posting()
-        {
-            if (HttpContext.Session.GetString("idUsuario") == null)
-                return RedirectToAction("Login", "Usuario");
-            else
-                return View();
-        }
-
-        [HttpPost]
-        public IActionResult NovoPost(Post post, IFormFile file)
-        {
-            post.imagePath = ImageHandler.UploadImage(file);
-            post.postDate = DateTime.Now;
-            PostService ps = new PostService();
-            ps.Inserir(post);
-            return RedirectToAction("Dicas", "Home");
-        }
-
-
 
         [HttpPost]
         public IActionResult EnviarMensagem(Mensagem mensagem)

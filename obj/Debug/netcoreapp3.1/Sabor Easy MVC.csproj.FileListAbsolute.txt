@@ -32,9 +32,7 @@ C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcore
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.pdb
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.genruntimeconfig.cache
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Sabor Easy MVC.csproj.CopyComplete
-C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dicas.cshtml.g.cs
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\ConfContato.cshtml.g.cs
-C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Posting.cshtml.g.cs
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Login.cshtml.g.cs
@@ -52,3 +50,5 @@ C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcore
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Dicas.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Posting.cshtml.g.cs

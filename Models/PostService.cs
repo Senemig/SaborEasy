@@ -33,6 +33,7 @@ namespace Sabor_Easy_MVC.Models
                 p.descricao = post.descricao;
                 p.hashtags = post.hashtags;
                 p.imagePath = post.imagePath;
+                p.conteudo = post.conteudo;
 
                 bc.SaveChanges();
             }
