@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Projeto Integrador\\Sabor Easy MVC\\Views\\Blog\\Post.cshtml",
+      "TargetPath": "Views\\Blog\\Post.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Projeto Integrador\\Sabor Easy MVC\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14467,11 +14472,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Projeto Integrador\\Sabor Easy MVC\\Views\\Blog\\Posting.cshtml",
-      "TargetPath": "Views\\Blog\\Posting.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Projeto Integrador\\Sabor Easy MVC\\Views\\Usuario\\Cadastro.cshtml",
       "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
       "FileKind": "mvc"
@@ -14479,6 +14479,11 @@
     {
       "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Projeto Integrador\\Sabor Easy MVC\\Views\\Home\\ConfContato.cshtml",
       "TargetPath": "Views\\Home\\ConfContato.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Projeto Integrador\\Sabor Easy MVC\\Views\\Blog\\NovoPost.cshtml",
+      "TargetPath": "Views\\Blog\\NovoPost.cshtml",
       "FileKind": "mvc"
     },
     {

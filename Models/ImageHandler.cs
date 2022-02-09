@@ -7,14 +7,21 @@ namespace Sabor_Easy_MVC.Models
     {
         public static string UploadImage(IFormFile file)
         {
-            var fileName = file.FileName;
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
-            using (var fileStream = new FileStream(path, FileMode.Create))
+            if (file != null)
             {
-                file.CopyTo(fileStream);
-            }
+                var fileName = file.FileName;
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                using (var fileStream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(fileStream);
+                }
 
-            return fileName;
+                return fileName;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

@@ -51,4 +51,5 @@ C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcore
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
 C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Dicas.cshtml.g.cs
-C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Posting.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Post.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Projeto Integrador\Sabor Easy MVC\obj\Debug\netcoreapp3.1\Razor\Views\Blog\NovoPost.cshtml.g.cs

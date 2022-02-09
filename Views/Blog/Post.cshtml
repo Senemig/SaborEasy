@@ -1,0 +1,40 @@
+@using Microsoft.AspNetCore.Http
+@model Post
+
+@{
+    ViewData["Title"] = "Post";
+}
+
+@if (Context.Session.GetInt32("idUsuario") != null)
+{
+    <p>
+        <a href="/Blog/NovoPost/@Model.Id" class="btn btn-primary">Editar </a>
+    </p>
+}
+
+<div class="container">
+    <div style="max-height: 500px;">
+        <img src="/images/@Model.imagePath" class="blog-img" alt="Imagem do post">
+    </div>
+
+    <div>
+        <h1 class="blog-title">
+            @Model.titulo
+        </h1>
+        <p>
+            @foreach (var s in Model.hashtags.Split(' '))
+            {
+                <span class="blog-hashtag">@s</span>
+            }
+        </p>
+        @foreach (var t in Model.conteudo.Split("\n"))
+        {
+            <p class="blog-text">
+                @t
+            </p>
+        }
+        <p class="blog-date">
+            @Model.postDate
+        </p>
+    </div>
+</div>

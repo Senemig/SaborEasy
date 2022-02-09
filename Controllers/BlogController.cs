@@ -20,23 +20,49 @@ namespace Sabor_Easy_MVC.Controllers
             return View(lista);
         }
 
-        public IActionResult Posting()
+        public IActionResult NovoPost(int id)
         {
             if (HttpContext.Session.GetString("idUsuario") == null)
                 return RedirectToAction("Login", "Usuario");
             else
-                return View();
+            {
+                if (id == 0)
+                {
+                    return View();
+                }
+                else
+                {
+                    PostService ps = new PostService();
+                    return View(ps.ListarPorId(id));
+                }
+            }
         }
 
         [HttpPost]
         public IActionResult NovoPost(Post post, IFormFile file)
         {
-            post.imagePath = ImageHandler.UploadImage(file);
-            post.postDate = DateTime.Now;
             PostService ps = new PostService();
-            ps.Inserir(post);
-            return RedirectToAction("Dicas", "Blog");
+            if (post.Id == 0)
+            {
+                post.imagePath = ImageHandler.UploadImage(file);
+                post.postDate = DateTime.Now;
+                ps.Inserir(post);
+                return RedirectToAction("Dicas", "Blog");
+
+            }
+            else
+            {
+                post.imagePath = ImageHandler.UploadImage(file);
+                ps.Atualizar(post);
+                return RedirectToAction("Post", post);
+            }
         }
 
+        public IActionResult Post(int id)
+        {
+            PostService ps = new PostService();
+
+            return View(ps.ListarPorId(id));
+        }
     }
 }

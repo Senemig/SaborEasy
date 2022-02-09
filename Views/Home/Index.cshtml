@@ -74,7 +74,7 @@
         <div class="other_articles">
             @for (int i = 0; i < 3 && i < Model.posts.Count; i++)
             {
-                <a class="post" href="/Home/Dicas/#@Model.posts[i].Id">
+                <a class="post" href="/Blog/Post/@Model.posts[i].Id">
                     <img src="/images/@Model.posts[i].imagePath">
                     <p>@Model.posts[i].titulo</p>
                 </a>

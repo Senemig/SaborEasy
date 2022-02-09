@@ -281,6 +281,14 @@ body {
   cursor: pointer;
 }
 
+.blog-img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+  cursor: default;
+  padding-bottom: 20px;
+}
+
 .blog-card-body {
   margin: 10px 15px 10px 15px;
 }
@@ -300,7 +308,6 @@ body {
 .blog-title {
   font-weight: 600;
   cursor: default;
-  text-align: left;
 }
 
 .blog-description {
@@ -308,6 +315,14 @@ body {
   cursor: default;
   text-align: left;
   font-size: 1.2rem;
+}
+
+.blog-text {
+  font-weight: 200;
+  cursor: default;
+  text-align: left;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .blog-date {

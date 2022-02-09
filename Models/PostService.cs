@@ -11,7 +11,15 @@ namespace Sabor_Easy_MVC.Models
         {
             using (BDContext bc = new BDContext())
             {
-                return (bc.Posts.ToList());
+                return (bc.Posts.OrderByDescending(p => p.postDate).ToList());
+            }
+        }
+
+        public Post ListarPorId(int id)
+        {
+            using (BDContext bc = new BDContext())
+            {
+                return (bc.Posts.Find(id));
             }
         }
 
@@ -29,10 +37,13 @@ namespace Sabor_Easy_MVC.Models
             using (BDContext bc = new BDContext())
             {
                 Post p = bc.Posts.Find(post.Id);
+                if (!string.IsNullOrEmpty(post.imagePath))
+                {
+                    p.imagePath = post.imagePath;
+                }
                 p.titulo = post.titulo;
                 p.descricao = post.descricao;
                 p.hashtags = post.hashtags;
-                p.imagePath = post.imagePath;
                 p.conteudo = post.conteudo;
 
                 bc.SaveChanges();

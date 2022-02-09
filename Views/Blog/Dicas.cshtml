@@ -6,7 +6,7 @@
 
 @if (Context.Session.GetInt32("idUsuario") != null)
 {
-    <a href="/Blog/Posting" class="btn btn-primary">Nova Dica</a>
+    <a href="/Blog/NovoPost" class="btn btn-primary">Nova Dica</a>
 }
 
 <div class="blog-wrapper">
@@ -15,7 +15,7 @@
     {
         foreach (Post post in Model)
         {
-            <div class="blog-card" id="@post.Id">
+            <div class="blog-card" id="@post.Id" onclick="location.href='/Blog/Post/@post.Id'">
                 <div class="blog-card-banner">
                     <img class="banner-img" src="/images/@post.imagePath" alt="">
                 </div>
@@ -26,7 +26,7 @@
                             <span class="blog-hashtag">@s</span>
                         }
                     </p>
-                    <h2 class="blog-title">@post.titulo</h2>
+                    <h2 class="blog-title text-left">@post.titulo</h2>
                     <p class="blog-description">@post.descricao</p>
                     <p class="blog-date">Postado em @post.postDate.ToShortDateString()</p>
                 </div>

@@ -4,8 +4,10 @@
     <fieldset>
         <legend>Novo Post</legend>
 
+        <input type="text" asp-for="Id" style="display: none;" readonly>
+
         <label asp-for="imagePath">Imagem</label>
-        <input type="file" name="file" id="name" accept="image/jpeg, image/png" required>
+        <input type="file" name="file" id="name" accept="image/jpeg, image/png">
 
         <label asp-for="titulo">Título</label>
         <input maxlength="25" asp-for="titulo" required>
