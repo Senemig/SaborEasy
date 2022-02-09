@@ -33,7 +33,7 @@ namespace Sabor_Easy_MVC.Controllers
             return View(viewModel);
         }
 
-        public IActionResult Receitas(int totalPag, int pagAtual)
+        public IActionResult Receitas(int id)
         {
             ReceitaService rs = new ReceitaService();
             List<Receita> lista = rs.ListarTodos();
@@ -45,7 +45,7 @@ namespace Sabor_Easy_MVC.Controllers
             else if (lista.Count >= 7)
             {
                 ViewData["totalPag"] = (lista.Count / 6 + ((lista.Count % 6) == 0 ? 0 : 1));
-                ViewData["pagAtual"] = pagAtual;
+                ViewData["pagAtual"] = id;
             }
 
             return View(lista);
