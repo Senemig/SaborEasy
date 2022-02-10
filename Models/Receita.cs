@@ -6,6 +6,7 @@ namespace Sabor_Easy_MVC.Models
     {
         public int Id { get; set; }
         public string imagePath { get; set; }
+        public string videoPath { get; set; }
         public string Titulo { get; set; }
         public string Ingredientes { get; set; }
         public string ModoPreparo { get; set; }

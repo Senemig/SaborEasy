@@ -19,7 +19,7 @@ namespace Sabor_Easy_MVC.Models
         {
             using (BDContext bc = new BDContext())
             {
-                return (bc.Receitas.ToList());
+                return (bc.Receitas.OrderByDescending(r => r.dataReceita).ToList());
             }
         }
 
@@ -42,6 +42,7 @@ namespace Sabor_Easy_MVC.Models
                 r.TempoPreparo = receita.TempoPreparo;
                 r.ModoPreparo = receita.ModoPreparo;
                 r.imagePath = receita.imagePath;
+                r.videoPath = receita.videoPath;
 
                 bc.SaveChanges();
             }
