@@ -36,7 +36,6 @@ body {
 .logo a:hover {
   text-align: center;
   font-family: "Satisfy", cursive;
-  background-color: rgb(250, 253, 251);
   text-decoration: none;
   color: black;
 }
@@ -496,6 +495,10 @@ body {
 }
 
 @media (max-width: 500px) {
+  .display-1 {
+    font-size: 3rem;
+  }
+
   .main_article img {
     width: 300px;
     height: 200px;
